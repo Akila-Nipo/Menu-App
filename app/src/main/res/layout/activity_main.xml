@@ -9,6 +9,48 @@
     android:background="@color/background_color"
     tools:context=".MainActivity">
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Yellow Bar View -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#FFFF00" />
+
+        <!-- Bold TextView on top of the Yellow Bar -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Language Learning App"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:paddingBottom="8dp"/>
+
+    </FrameLayout>
+
+
+    <!-- Header Image -->
+    <ImageView
+        android:id="@+id/headerImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/header_image"
+        android:layout_marginBottom="16dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose your PACKAGE:"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"/>
+
     <!-- Meal Selection Spinner -->
     <Spinner
         android:id="@+id/MealSpinner"
@@ -22,6 +64,8 @@
         android:padding="12dp" />
 
     <!-- Seek Menu Button -->
+
+    <!-- Menu Text Display -->
     <Button
         android:id="@+id/SeekButton"
         android:layout_width="wrap_content"
@@ -29,12 +73,9 @@
         android:layout_gravity="center"
         android:layout_margin="16dp"
         android:text="@string/btnLabel"
-        android:textColor="@android:color/white"
-        android:background="@drawable/button_background"
-        android:padding="12dp"
-        android:onClick="onClickSeekMenu" />
+        android:onClick="onClickSeekMenu"
+        />
 
-    <!-- Menu Text Display -->
     <TextView
         android:id="@+id/MenuTextView"
         android:layout_width="wrap_content"
@@ -45,4 +86,12 @@
         android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/footerImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/footer_image"
+        android:layout_marginTop="16dp"/>
+
 </LinearLayout>

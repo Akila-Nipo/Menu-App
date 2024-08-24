@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         StringBuilder menuFormatted = new StringBuilder();
         for (String menu : menuList) {
-            menuFormatted.append(menu).append('\n');
+            menuFormatted.append("• ").append(menu).append('\n');
         }
 
         TextView MenuTextView = (TextView) findViewById(R.id.MenuTextView);

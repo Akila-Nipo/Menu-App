@@ -1,10 +1,10 @@
 <resources>
 <string name="app_name">Restaurant</string>
-<string name="btnLabel">Seek Menu</string>
-<string name="defaultText">No option selected ..</string>
+<string name="btnLabel">Seek Package</string>
+<string name="defaultText">No option selected ...</string>
 <string-array name="MenuStringArray">
-    <item>Breakfast</item>
-    <item>Lunch</item>
-    <item>DInner</item>
+    <item>Front-End Package</item>
+    <item>Back-End Package</item>
+    <item>Full-Stack Package</item>
 </string-array>
 </resources>

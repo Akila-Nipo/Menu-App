@@ -8,20 +8,20 @@ public class FoodExpert {
 
     List<String> getMenu(String meal) {
         List<String> Menu = new ArrayList<>();
-        if (meal.equals("Breakfast")) {
-            Menu.add("Roti");
-            Menu.add("Dal");
-            Menu.add("Egg");
+        if (meal.equals("Front-End Package")) {
+            Menu.add("React");
+            Menu.add("JavaScript");
+            Menu.add("Vite on Node.js platform");
         }
-        else if (meal.equals("Lunch")) {
-            Menu.add("Rice");
-            Menu.add("Chicken");
-            Menu.add("Fish");
+        else if (meal.equals("Back-End Package")) {
+            Menu.add("Django");
+            Menu.add("Python");
+            Menu.add("Heroku on Python platform");
         }
         else {
-            Menu.add("Rice");
-            Menu.add("Vegetable");
-            Menu.add("Chicken");
+            Menu.add("Angular");
+            Menu.add("Express.js");
+            Menu.add("AWS with TypeScript/JavaScript");
         }
         return Menu;
     }
